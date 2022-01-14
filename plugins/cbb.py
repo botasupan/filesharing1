@@ -11,7 +11,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text=f"<b>Tentang Bot ini:\n\n • Owner: @{OWNER}\n • Creator: <a href='https://t.me/imbbyichi'>Klik Disini</a></b>\n",
+            text=f"<b>• Owner : @{OWNER}\n • Creator Bot : <a href='https://t.me/imbbyichi'>Klik Disini</a></b>\n",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("• ᴛᴜᴛᴜᴘ •", callback_data="close")]]
